@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 38d36f3b6d7157ea127abd5f71759305003db154
 def display_board(board)
   puts " #{board[0]} | #{board[1]} | #{board[2]} "
   puts "-----------"
@@ -15,6 +18,7 @@ def move(board, index, value = "X")
 end
 
 def valid_move?(board, index)
+<<<<<<< HEAD
   if board[index] == " " && index >= 0 && index <= 8
   return true
   
@@ -24,6 +28,20 @@ def valid_move?(board, index)
   else 
     return false
   end
+=======
+if board[index] == " " 
+return true
+
+elsif board[index] == "" 
+return true
+
+if index >= 0 && if index <= 8
+return true
+
+else 
+  return false
+end
+>>>>>>> 38d36f3b6d7157ea127abd5f71759305003db154
 end
 
 
@@ -31,6 +49,7 @@ def input_to_index(user_input)
   user_input.to_i - 1 
 end
 
+<<<<<<< HEAD
 def turn(board)
   puts "Please enter 1-9:"
   input = gets.strip 
@@ -42,6 +61,15 @@ def turn(board)
   else
     turn(board)
   end     
+=======
+
+
+
+def turn(user_input)
+puts "Please enter 1-9:"
+  gets.strip
+
+>>>>>>> 38d36f3b6d7157ea127abd5f71759305003db154
 end
 
 
